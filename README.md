@@ -7,15 +7,15 @@ Execute `git clone https://github.com/bTymoshchuk/tjc.git`
 1. Remove your previous apps folders(if they exist):
 ```
 cd %CATALINA_HOME%\webapps
-del ROOT
-del tjcapi
+rmdir ROOT /s
+rmdir tjcapi /s
 del tjcapi.war
 ```
  2. Copy tJC files:
 ```
 cd <downloaded repository path>
 copy tjcapi.war %CATALINA_HOME%\webapps
-copy root %CATALINA_HOME%\webapps
+copy ROOT %CATALINA_HOME%\webapps
 ```
  3. Restart the Tomcat server
 ```

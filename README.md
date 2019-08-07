@@ -1,8 +1,8 @@
 # Welcome to tJC!
 To deploy the project use the following instructions:
-## 1.Clone the repository
+## 1. Clone the repository
 Execute `git clone https://github.com/bTymoshchuk/tjc.git`
-## 2.Copy the Angular app and the Spring Boot API to the Tomcat
+## 2. Copy the Angular app and the Spring Boot API to the Tomcat
 ### Run the following commands in  the Windows Command Promt:
 1. Remove your previous apps folders(if they exist):
 ```

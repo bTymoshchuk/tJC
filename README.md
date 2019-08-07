@@ -9,11 +9,11 @@ Remove your previous apps folders(if they exist):
 del ROOT
 del tjcapi
 del tjcapi.war`
-Copy tJC files:
+2. Copy tJC files:
 `cd <downloaded repository path>
 copy tjcapi.war %CATALINA_HOME%\webapps
 copy root %CATALINA_HOME%\webapps`
-Restart the Tomcat server
+3. Restart the Tomcat server
 `cd %CATALINA_HOME%\bin\
 call shutdown.bat
 call startup.bat`

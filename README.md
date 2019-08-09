@@ -1,28 +1,12 @@
 # Welcome to tJC!
 To deploy the project use the following instructions:
 ## 1. Clone the repository
-Execute `git clone https://github.com/bTymoshchuk/tjc.git`
+In GIT Bash execute `git clone https://github.com/bTymoshchuk/tjc.git`
 ## 2. Copy the Angular app and the Spring Boot API to the Tomcat
-### Run the following commands in  the Windows Command Promt:
-1. Remove your previous apps folders(if they exist):
-```
-cd %CATALINA_HOME%\webapps
-rmdir ROOT /s
-rmdir tjcapi /s
-del tjcapi.war
-```
- 2. Copy tJC files:
-```
-cd <downloaded repository path>
-copy tjcapi.war %CATALINA_HOME%\webapps
-copy ROOT %CATALINA_HOME%\webapps
-```
- 3. Restart the Tomcat server
-```
-cd %CATALINA_HOME%\bin\
-call shutdown.bat
-call startup.bat
-```
-## 3.Change the API URL in the Angular app
-1. Go to `Tomcat <version>/webapp/tjc/index.html.`
-2. In the script tag replace the value of `cfgApiBaseUrl` with the path to your api.
+ 1. Go to your Apache Tomcat installation foder
+ 2. In `Tomcat <version>\webapps` remove `ROOT`, `tjcapi` and `tjcapi.war`(if they exist)
+ 3. Copy `ROOT` folder and `tjcapi.war` from downloaded repository to `Tomcat <version>\webapps` folder:
+## 3. Change the API URL in the Angular app
+ 1. Go to `Tomcat <version>/webapp/tjc/index.html.`
+ 2. In the script tag replace the value of `cfgApiBaseUrl` with the path to your api.
+## 4. Restart Apache Tomcat

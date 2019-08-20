@@ -16,7 +16,7 @@ To deploy the project use the following instructions:
   roles="admin-gui,manager-gui"/>
   ```
 - Start the Tomcat Service
-  - if your Tomcat Server doesn't set up, some other application could be using tomcat ports run `netstat -a` in the command line and, if 8080 or 8005 is being used, change it in `Tomcat <version>\conf\server.xml` with any unsed port
+  - if your Tomcat Server doesn't set up, some other application could be using tomcat ports run `netstat -a` in the command line and, if 8080 or 8009 is being used, change it in `Tomcat <version>\conf\server.xml` with any unsed port
 - Go to [localhost:8080/manager](localhost:8080/manager) and log in
 ## 2. Clone the repository
 In GIT Bash execute `git clone https://github.com/bTymoshchuk/tjc.git`

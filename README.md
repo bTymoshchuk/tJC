@@ -5,7 +5,7 @@ To deploy the project use the following instructions:
 - [Download Tomcat Apache 9.0](http://mirror.klaus-uwe.me/apache/tomcat/tomcat-9/v9.0.24/bin/apache-tomcat-9.0.24.exe)
 - Execute the downloaded file
 - Select the full type of installation
-- In the next window create your user and give it 'admin-gui' and 'manager-gui' roles
+- In the next window create your user and give it `admin-gui` and `manager-gui` roles
   - you can also create a new user after the installation pasting the following code in your `Tomcat <version>\conf\tomcat-users.xml`
   ```
   <role rolename="manager-gui"/>

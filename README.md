@@ -7,7 +7,7 @@ To deploy the project use the following instructions:
 - Select the full type of installation
 - In the next window create your user and give it `admin-gui` and `manager-gui` roles
   - you can also create a new user after the installation pasting
-  the following code in your `Tomcat\conf\tomcat-users.xml`
+  the following code in `\conf\tomcat-users.xml`
   ```
   <role rolename="manager-gui"/>
 
